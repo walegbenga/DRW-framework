@@ -1,0 +1,46 @@
+.theForm{
+	width: 300px;
+	margin-left: 13%;
+	padding-left: 5px;
+	border-left-color: #00b;
+}
+.theForm fieldset{
+	background-color: #dd9;
+	border: none;
+}
+.theForm legend{
+	background-color: #dd9;
+	padding: 0 auto 0 2px;
+}
+.theForm ol{
+	list-style: none;
+	margin: 2px;
+	padding: 0;
+}
+.theForm li{
+	margin: 0 0 9px 0;
+	padding: 0;
+}
+.theForm fieldset, .theForm input, .theForm legend{
+	border-radius: 7px;
+}
+.theForm input{
+	background-color: #fff;
+	border: 1px solid #bbb;
+	display: block;
+	width: 200px;
+	padding: 2px;
+}
+.theForm input[type="submit"]{
+	background-color: #bbb;
+	padding: 0;
+	width: 230px;
+	height: 20px;
+}
+.theForm input[type="button"], li last-child{
+	background-color: #f00;
+	padding: 0;
+	width: 230px;
+	margin-top: 2px;
+	height: 20px;
+}

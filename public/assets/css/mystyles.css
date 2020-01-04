@@ -1,0 +1,213 @@
+/* These classes are use for positioning*/
+.absolute, .abs { position:absolute; }
+.fixed, .fix { position:fixed; }
+.relative, .rel { position:relative; }
+.static, .sta { position:static; }
+
+/* These classes are meant for floating elements*/
+/*This class floats an object to the left, with other elements flowing
+around it. The flowing can be exited by issuing a <br clear='left'> tag*/
+.leftfloat, .leftfloat_h:hover, .lf, .lf_h:hover { float:left; }
+/*This class floats an object to the right, with other elements flowing
+around it. The flowing can be exited by issuing a <br clear='right'> tag*/
+.rightfloat, .rightfloat_h:hover, .rf, .rf_h:hover { float:right; }
+/*Using this class will unfloat an object that has previously been floated.*/
+.nofloat, .nofloat_h:hover, .nf, .nf_h:hover { float:none; }
+
+/* This group has 21 main classes, with six different types of each that can be selected by choosing the required 
+suffix*/
+.aqua_b, .aqua_ba:active, .aqua_bh:hover,
+.aqua_lb a, .aqua_lba a:active, .aqua_lbh a:hover {background:#0ff}
+.black_b, .black_ba:active, .black_bh:hover,
+.black_lb a, .black_lba a:active, .black_lbh a:hover {background:#000}
+.blue_b, .blue_ba:active, .blue_bh:hover,
+.blue_lb a, .blue_lba a:active, .blue_lbh a:hover {background:#00f}
+.brown_b, .brown_ba:active, .brown_bh:hover,
+.brown_lb a, .brown_lba a:active, .brown_lbh a:hover {background:#c44}
+.fuchsia_b, .fuchsia_ba:active, .fuchsia_bh:hover,
+.fuchsia_lb a,.fuchsia_lba a:active,.fuchsia_lbh a:hover{background:#f0f}
+.gold_b, .gold_ba:active, .gold_bh:hover,
+.gold_lb a, .gold_lba a:active, .gold_lbh a:hover {background:#fc0}
+.gray_b, .gray_ba:active, .gray_bh:hover,
+.gray_lb a, .gray_lba a:active, .gray_lbh a:hover {background:#888}
+.green_b, .green_ba:active, .green_bh:hover,
+.green_lb a, .green_lba a:active, .green_lbh a:hover {background:#080}
+.khaki_b, .khaki_ba:active, .khaki_bh:hover,
+.khaki_lb a, .khaki_lba a:active, .khaki_lbh a:hover {background:#cc8}
+.lime_b, .lime_ba:active, .lime_bh:hover,
+.lime_lb a, .lime_lba a:active, .lime_lbh a:hover {background:#0f0}
+.maroon_b, .maroon_ba:active, .maroon_bh:hover,
+.maroon_lb a, .maroon_lba a:active, .maroon_lbh a:hover {background:#800}
+.navy_b, .navy_ba:active, .navy_bh:hover,
+.navy_lb a, .navy_lba a:active, .navy_lbh a:hover {background:#008}
+.olive_b, .olive_ba:active, .olive_bh:hover,
+.olive_lb a, .olive_lba a:active, .olive_lbh a:hover {background:#880}
+.orange_b, .orange_ba:active, .orange_bh:hover,
+.orange_lb a, .orange_lba a:active, .orange_lbh a:hover {background:#f80}
+.pink_b, .pink_ba:active, .pink_bh:hover,
+.pink_lb a, .pink_lba a:active, .pink_lbh a:hover {background:#f88}
+.purple_b, .purple_ba:active, .purple_bh:hover,
+.purple_lb a, .purple_lba a:active, .purple_lbh a:hover {background:#808}
+.red_b, .red_ba:active, .red_bh:hover,
+.red_lb a, .red_lba a:active, .red_lbh a:hover {background:#f00}
+.silver_b, .silver_ba:active, .silver_bh:hover,
+.silver_lb a, .silver_lba a:active, .silver_lbh a:hover {background:#ccc}
+.teal_b, .teal_ba:active, .teal_bh:hover,
+.teal_lb a, .teal_lba a:active, .teal_lbh a:hover {background:#088}
+.white_b, .white_ba:active, .white_bh:hover,
+.white_lb a, .white_lba a:active, .white_lbh a:hover {background:#fff}
+.yellow_b, .yellow_ba:active, .yellow_bh:hover,
+.yellow_lb a, .yellow_lba a:active, .yellow_lbh a:hover {background:#ff0}
+
+
+/* This group has 15 main classes, with six different types of each that can be selected by choosing the required suffix*/
+.carrot1, .carrot1_a:active, .carrot1_h:hover,
+.carrot1_l a, .carrot1_la a:active, .carrot1_lh a:hover {
+background:#ea4;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#fd8), to(#c60));
+background:-moz-linear-gradient(top, #fd8, #c60);
+background:linear-gradient(left top, #fd8, #c60);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#f0d080', endColorstr='#c06000');
+}
+.chrome1, .chrome1_a:active, .chrome1_h:hover,
+.chrome1_l a, .chrome1_la a:active, .chrome1_lh a:hover {
+background:#ddd;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#fff), to(#aaa));
+background:-moz-linear-gradient(top, #fff, #aaa);
+background:linear-gradient(left top, #fff, #aaa);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#f0f0f0', endColorstr='#a0a0a0');
+}
+.coffee1, .coffee1_a:active, .coffee1_h:hover,
+.coffee1_l a, .coffee1_la a:active, .coffee1_lh a:hover {
+background:#c94;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#fc6), to(#752));
+background:-moz-linear-gradient(top, #fc6, #752);
+background:linear-gradient(left top, #fc6, #752);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#f0c060', endColorstr='#705020');
+}
+.dusk1, .dusk1_a:active, .dusk1_h:hover,
+.dusk1_l a, .dusk1_la a:active, .dusk1_lh a:hover {
+background:#79c;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#8ad), to(#357));
+background:-moz-linear-gradient(top, #8ad, #357);
+background:linear-gradient(left top, #8ad, #357);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#80a0d0', endColorstr='#305070');
+}
+.earth1, .earth1_a:active, .earth1_h:hover,
+.earth1_l a, .earth1_la a:active, .earth1_lh a:hover {
+background:#a86;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#db8), to(#532));
+background:-moz-linear-gradient(top, #db8, #532);
+background:linear-gradient(left top, #db8, #532);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#d0b080', endColorstr='#503020');
+}
+.fire1, .fire1_a:active, .fire1_h:hover,
+.fire1_l a, .fire1_la a:active, .fire1_lh a:hover {
+background:#db3;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#ef5), to(#b40));
+background:-moz-linear-gradient(top, #ef5, #b40);
+background:linear-gradient(left top, #ef5, #b40);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#e0f050', endColorstr='#b04000');
+}
+.grass1, .grass1_a:active, .grass1_h:hover,
+.grass1_l a, .grass1_la a:active, .grass1_lh a:hover {
+background:#7b6;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#ae9), to(#160));
+background:-moz-linear-gradient(top, #ae9, #160);
+background:linear-gradient(left top, #ae9, #160);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#a0e090', endColorstr='#106000');
+}
+.iron1, .iron1_a:active, .iron1_h:hover,
+.iron1_l a, .iron1_la a:active, .iron1_lh a:hover {
+background:#777;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#999), to(#333));
+background:-moz-linear-gradient(top, #999, #333);
+background:linear-gradient(left top, #999, #333);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#909090', endColorstr='#303030');
+}
+.plum1, .plum1_a:active, .plum1_h:hover,
+.plum1_l a, .plum1_la a:active, .plum1_lh a:hover {
+background:#969;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#b8a), to(#636));
+background:-moz-linear-gradient(top, #b8a, #636);
+background:linear-gradient(left top, #b8a, #636);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#b080a0', endColorstr='#603060');
+}
+.rose1, .rose1_a:active, .rose1_h:hover,
+.rose1_l a, .rose1_la a:active, .rose1_lh a:hover {
+background:#e45;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#f67), to(#b12));
+background:-moz-linear-gradient(top, #f67, #b12);
+background:linear-gradient(top, #f67, #b12);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#f06070', endColorstr='#b01020');
+}
+.sky1, .sky1_a:active, .sky1_h:hover,
+.sky1_l a, .sky1_la a:active, .sky1_lh a:hover {
+background:#abe;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#cdf), to(#68c));
+background:-moz-linear-gradient(top, #cdf, #68c);
+background:linear-gradient(left top, #cdf, #68c);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#c0d0f0', endColorstr='#6080c0');
+}
+.sunset1, .sunset1_a:active, .sunset1_h:hover,
+.sunset1_l a, .sunset1_la a:active, .sunset1_lh a:hover {
+background:#ed3;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#fe4), to(#ca0));
+background:-moz-linear-gradient(top, #fe4, #ca0);
+background:linear-gradient(left top, #fe4, #ca0);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#f0e040', endColorstr='#c0a000');
+}
+.tin1, .tin1_a:active, .tin1_h:hover,
+.tin1_l a, .tin1_la a:active, .tin1_lh a:hover {
+background:#aaa;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#bbb), to(#777));
+background:-moz-linear-gradient(top, #bbb, #777);
+background:linear-gradient(left top, #bbb, #777);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#b0b0b0', endColorstr='#707070');
+}
+.water1, .water1_a:active, .water1_h:hover,
+.water1_l a, .water1_la a:active, .water1_lh a:hover {
+background:#ace;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#eff), to(#58c));
+background:-moz-linear-gradient(top, #eff, #58c);
+background:linear-gradient(left top, #eff, #58c);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#e0f0f0', endColorstr='#5080c0');
+}
+.wine1, .wine1_a:active, .wine1_h:hover,
+.wine1_l a, .wine1_la a:active, .wine1_lh a:hover {
+background:#d33;
+background:-webkit-gradient(linear, left top, left bottom,
+from(#f44), to(#922));
+background:-moz-linear-gradient(top, #f44, #922);
+background:linear-gradient(left top, #f44, #922);
+filter :progid:DXImageTransform.Microsoft.Gradient(
+startColorstr='#f04040', endColorstr='#902020');
+}
