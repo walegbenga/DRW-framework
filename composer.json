@@ -1,8 +1,8 @@
 {
-  "name": "DRW-framework/DRW-framework",
-  "description": "DRW framework (Don't Re-invent the Wheel is a PHP framework that closely mimic the RoR framework)",
+  "name": "drw-framework/drw-framework",
+  "description": "drw framework (Don't Re-invent the Wheel is a PHP framework that closely mimic the RoR framework)",
   "license": "MIT",
-  "homepage": "https://github.com/gbengawale/DRW-framework",
+  "homepage": "https://github.com/gbengawale/drw-framework",
   "keywords": ["web","application", "framework", "php", "php7", "php7.2"],
   "autoload": {
     "psr-4": {
