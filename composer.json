@@ -6,7 +6,7 @@
   "keywords": ["web","application", "framework", "php", "php7", "php7.2"],
   "autoload": {
     "psr-4": {
-      "App\\": "app/"
+      "Generic\\": "classes/"
     }
   },
   "require": {
