@@ -10,6 +10,6 @@
     }
   },
   "require": {
-    "minicli/minicli": "^1.0"
+    "drwcli/drwcli": "^1.0"
   }
 }
