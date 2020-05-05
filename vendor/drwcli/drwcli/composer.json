@@ -1,0 +1,16 @@
+{
+  "name": "drwcli/drwcli",
+  "type": "library",
+  "description": "The CLI framework for the DRW web framework",
+  "license": "MIT",
+  "homepage": "https://github.com/walegbenga/drwcli",
+  "keywords": ["cli","command-line"],
+  "autoload": {
+    "psr-4": {
+      "Drwcli\\": "lib/"
+    }
+  },
+  "require": {
+    "ext-readline": "*"
+  }
+}

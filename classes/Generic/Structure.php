@@ -39,7 +39,7 @@ class Structure{
 		$loginLayouts .= PHP_EOL . "\t</form>";
 		$loginLayouts .= PHP_EOL . "\t</div>";
 
-		$login_dir = __DIR__ . '/../../template/login';
+		$login_dir = __DIR__ . '/../../app/templates/login';
 		if(file_exists($login_dir)){
 			#mkdir($login_dir, 0777, true);
 			if(chdir($login_dir)){
@@ -75,7 +75,7 @@ class Structure{
 		$cssLayouts .= PHP_EOL . "\twidth: 230px;" . PHP_EOL . "\tmargin-top: 2px;" . PHP_EOL . "\theight: 20px;";
 		$cssLayouts .=  PHP_EOL . "}" . PHP_EOL;
 
-		$css_dir = __DIR__ . '/../../public/assets/css';
+		$css_dir = __DIR__ . '/../../app/assets/css';
 		#$css_dir = __DIR__ . '';
 		if(!file_exists($css_dir)){
 			mkdir($css_dir, 0777, true);
@@ -111,7 +111,7 @@ class Structure{
 		$regLayouts .= PHP_EOL . "\t</form>";
 		$regLayouts .= PHP_EOL . "\t</div>";
 
-		$reg_dir = __DIR__ . '/../../template/admin';
+		$reg_dir = __DIR__ . '/../../app/templates/admin';
 		if(file_exists($reg_dir)){
 			#mkdir($reg_dir, 0777, true);
 			if(chdir($reg_dir)){
@@ -128,7 +128,7 @@ class Structure{
 		$loginErrorLayouts = '<h2>You are not logged in</h2>' . PHP_EOL;
 		$loginErrorLayouts .= '<p>You must looged in to view this page. <a href="/login/new">Click here to login</a> or <a href="/register/new">Click to register an account</a></p>';
 
-		$loginerror_dir = __DIR__ . '/../../template/login';
+		$loginerror_dir = __DIR__ . '/../../app/templates/login';
 		if(file_exists($loginerror_dir)){
 			#mkdir($loginerror_dir, 0777, true);
 			if(chdir($loginerror_dir)){
@@ -145,7 +145,7 @@ class Structure{
 		$loginSuccessLayouts = '<h2>You are now logged in</h2>' . PHP_EOL;
 		$loginSuccessLayouts .= '<p>If you are not redirected in 10 secons, please <a href="/">Click here to login</a> </p>';
 
-		$loginsuccess_dir = __DIR__ . '/../../template/login';
+		$loginsuccess_dir = __DIR__ . '/../../app/templates/login';
 		if(!file_exists($loginsuccess_dir)){
 			mkdir($loginsuccess_dir, 0777, true);
 			if(chdir($loginsuccess_dir)){
@@ -162,7 +162,7 @@ class Structure{
 		$regSuccessLayouts = '<h2>Registration successful</h2>' . PHP_EOL;
 		$regSuccessLayouts .= '<p>If you are not redirected in 10 secons, please <a href="/login">Click here to login</a> </p>';
 
-		$regsuccess_dir = __DIR__ . '/../../template/admin';
+		$regsuccess_dir = __DIR__ . '/../../app/templates/admin';
 		if(file_exists($regsuccess_dir)){
 			#mkdir($regsuccess_dir, 0777, true);
 			if(chdir($regsuccess_dir)){
@@ -179,7 +179,7 @@ class Structure{
 		$regLayouts = '<h2>Welcome to our home page</h2>' . PHP_EOL;
 		#$regLayouts .= '<p>If you are not redirected in 10 secons, please <a href="/login">Click here to login</a> </p>';
 
-		$reg_dir = __DIR__ . '/../../template/admin';
+		$reg_dir = __DIR__ . '/../../app/templates/admin';
 		if(file_exists($reg_dir)){
 			#mkdir($regsuccess_dir, 0777, true);
 			if(chdir($reg_dir)){
@@ -200,7 +200,7 @@ class Structure{
 		$viewProfileLayouts .= "\t<li>" . '<?=adminProfile->email?>' . "</li>" . PHP_EOL;
 		$viewProfileLayouts .= "</ul>" . PHP_EOL;
 
-		$viewprofile_dir = __DIR__ . '/../../template/admin';
+		$viewprofile_dir = __DIR__ . '/../../app/templates/admin';
 		if(!file_exists($viewprofile_dir)){
 			mkdir($viewprofile_dir, 0777, true);
 			if(chdir($viewprofile_dir)){
@@ -227,7 +227,7 @@ class Structure{
 		$fpLayouts .= PHP_EOL . "\t</form>";
 		$fpLayouts .= PHP_EOL . "</div>";
 
-		$fp_dir = __DIR__ . '/../../template/forgetpassword';
+		$fp_dir = __DIR__ . '/../../app/templates/forgetpassword';
 		if(!file_exists($fp_dir)){
 			mkdir($fp_dir, 0777, true);
 			if(chdir($fp_dir)){
@@ -258,7 +258,7 @@ class Structure{
 		$fpLayouts .= PHP_EOL . "\t</form>";
 		$fpLayouts .= PHP_EOL . "</div>";
 
-		$fp_dir = __DIR__ . '/../../template/resetpassword';
+		$fp_dir = __DIR__ . '/../../app/templates/resetpassword';
 		if(!file_exists($fp_dir)){
 			mkdir($fp_dir, 0777, true);
 			if(chdir($fp_dir)){
@@ -393,7 +393,7 @@ class Structure{
 		$controllerScript .= "}". PHP_EOL;
 
 		# Write to the file'
-		$controllerAPI_dir = __DIR__ . '/../Controllers/Api';
+		$controllerAPI_dir = __DIR__ . '/../app/Controllers/Api';
 		$controllerAPIFile = ucfirst($controllerNameAPI) .'ControllerAPI' . '.php';
 		if(!file_exists($controllerAPI_dir)){
 			mkdir($controllerAPI_dir, 0777, true);
@@ -467,7 +467,7 @@ class Structure{
 		$join .= "}" . PHP_EOL;
 
 		# Write to the file'
-		$dir = __DIR__ . '/../Model';
+		$dir = __DIR__ . '/../app';
 		$file = ucfirst($table) . '.php';
 		
 		if(!file_exists($dir)){
@@ -581,7 +581,7 @@ class Structure{
 		$controllerScript .= "}". PHP_EOL;
 
 		# Write to the file'
-		$controller_dir = __DIR__ . '/../Controllers';
+		$controller_dir = __DIR__ . '/../app/Controllers';
 		$controllerFile = ucfirst($controllerName) .'Controller' . '.php';
 		if(!file_exists($controller_dir)){
 			mkdir($controller_dir, 0777, true);
@@ -643,7 +643,7 @@ class Structure{
 		$controllerScript .= "\t\treturn ['template' => 'home.html.php', 'title' => 'You are logged out'];" . PHP_EOL . "\t}" . PHP_EOL . '}';
 		
 		# Write to the file'
-		$loginController_dir = __DIR__ . '/../Controllers';
+		$loginController_dir = __DIR__ . '/../app/Controllers';
 		$loginControllerFile = 'LoginController.php';
 		if(!file_exists($loginController_dir)){
 			mkdir($loginController_dir, 0777, true);
@@ -800,7 +800,7 @@ class Structure{
 		$controllerScript .= '}';
 		
 		# Write to the file'
-		$regController_dir = __DIR__ . '/../Controllers';
+		$regController_dir = __DIR__ . '/../app/Controllers';
 		$regControllerFile = 'RegisterController.php';
 		if(!file_exists($regController_dir)){
 			mkdir($regController_dir, 0777, true);
@@ -896,7 +896,7 @@ class Structure{
 		$controllerScript .= PHP_EOL . '}';
 		
 		# Write to the file'
-		$ForgetPasswordController_dir = __DIR__ . '/../Controllers';
+		$ForgetPasswordController_dir = __DIR__ . '/../app/Controllers';
 		$ForgetPasswordControllerFile = 'ForgetPasswordController.php';
 		if(file_exists($ForgetPasswordController_dir)) {
 			#mkdir($ForgetPasswordController_dir, 0777, true);
@@ -976,7 +976,7 @@ class Structure{
 		$controllerScript .= PHP_EOL . '}';
 		
 		# Write to the file'
-		$ResetPasswordController_dir = __DIR__ . '/../Controllers';
+		$ResetPasswordController_dir = __DIR__ . '/../app/Controllers';
 		$ResetPasswordControllerFile = 'ResetPasswordController.php';
 		if(file_exists($ResetPasswordController_dir)) {
 			#mkdir($ForgetPasswordController_dir, 0777, true);
@@ -1018,7 +1018,7 @@ class Structure{
 		$join .= PHP_EOL . "\t}" . PHP_EOL;
 		$join .= PHP_EOL . "}" . PHP_EOL;
 		# Write to the file'
-		$dir = __DIR__ . '/../Model';
+		$dir = __DIR__ . '/../app';
 		$file = 'ForgetPassword.php';
 		
 		if(file_exists($dir)) {
@@ -1104,14 +1104,14 @@ class Structure{
 		$templateLayouts .= "\t\t" . '<?= $output ?>' . PHP_EOL . "\t</body>" . PHP_EOL . "</html>";
 
 		$view = [$newView => $templateNew, $indexView => $templateIndex, $editView => $templateEdit, $showView => $templateShow];
-		$template_dir = __DIR__ . '/../../template/' . lcfirst($table);
+		$template_dir = __DIR__ . '/../../app/templates/' . lcfirst($table);
 		if(!file_exists($template_dir)){
 			mkdir($template_dir, 0777, true);
 			if(chdir($template_dir)){
 				foreach($view as $k => $v){
 					var_dump(file_put_contents($k, $v));
 				}
-				$layout_dir = __DIR__ . '/../../template/layouts';
+				$layout_dir = __DIR__ . '/../../app/templates/layouts';
 				if(!file_exists($layout_dir)){
 					mkdir($layout_dir, 0777, true);
 					if(chdir($layout_dir)){
@@ -1156,13 +1156,13 @@ class Structure{
 		}
 
 		echo "Deleting Model class " . ucfirst($table) . "....";
-		delModel(__DIR__ . '/../Model', ucfirst($table) . '.php');
+		delModel(__DIR__ . '/../app', ucfirst($table) . '.php');
 
 		echo "Deleting Controller class ucfirst($table)" . "Controller";
-		delController(__DIR__ . '/../Controllers', ucfirst($table) . 'Controller.php');
+		delController(__DIR__ . '/../app/Controllers', ucfirst($table) . 'Controller.php');
 		
 		echo "Deleting template $table...." . "<br/>";
-		dropTemp(__DIR__ . '/../../template/' . $table);
+		dropTemp(__DIR__ . '/../../app/templates/' . $table);
 		echo "Successfully delete $table..." . "<br/>";
 	}
 

@@ -1,16 +1,38 @@
 {
-  "name": "drw-framework/drw-framework",
-  "description": "drw framework (Don't Re-invent the Wheel is a PHP framework that closely mimic the RoR framework)",
-  "license": "MIT",
-  "homepage": "https://github.com/gbengawale/drw-framework",
-  "keywords": ["web","application", "framework", "php", "php7", "php7.2"],
-  "autoload": {
-    "psr-4": {
-      "Generic\\": "classes/"
+    "name": "drw-framework/drw-framework",
+    "description": "drw framework (Don't Re-invent the Wheel is a PHP framework that closely mimic the RoR framework)",
+    "license": "MIT",
+    "homepage": "https://github.com/gbengawale/drw-framework",
+    "keywords": ["web", "application", "framework", "php", "php7", "php7.2"],
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Generic\\": "classes/Generic",
+            "Console\\": "classes/Console"
+        },
+        "classmap": ["classes"]
+    },
+    "require":
+    {
+        "php": "^7.2",
+        "symfony/console": "^5.0"
+    },
+    "require-dev":
+    {
+        "phing/phing": "2.*",
+        "brandonwamboldt/utilphp": "1.0.*",
+        "psy/psysh": "@stable",
+        "phpunit/phpunit": "^8.0"
+    },
+    "prefer-stable": true,
+    "scripts":
+    {
+        "post-autoload-dump": [
+            "Generic\\AfterInstall\\Composer::afterAutoloadDump"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
     }
-  },
-  "require": {
-    "php": "^7.2",
-    "drwcli/drwcli": "^1.0"
-  }
 }
