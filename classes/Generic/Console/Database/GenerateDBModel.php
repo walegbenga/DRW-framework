@@ -111,9 +111,9 @@ class GenerateDBModel
 	public function generateAdminDB($column = []){
 		echo 'Generating the admin model' . "<br/>";
 		if(empty($column)){
-			$this->addTableToDB('admin', ['first_name s:(100) nn:', 'last_name string:(100) nn:' , 'email s:(100) nn:', 'password s:(100) nn:', 'username s:(100) nn:']);
+			$this->addTableToDB('admin', ['first_name s:(100) nn:', 'last_name string:(100) nn:' , 'email s:(100) nn:', 'password s:(100) nn:']);
 			$pw = password_hash('secret', PASSWORD_DEFAULT);
-			$query = 'INSERT INTO `admin`(`first_name`, `last_name`, `email`, `password`, `username`) VALUES ("Willy", "Keysers", "stephenogunbule@example.com", :pw, "robbert_bassham")';
+			$query = 'INSERT INTO `admin`(`first_name`, `last_name`, `email`, `password`) VALUES ("Willy", "Keysers", "stephenogunbule@drw.com", :pw, "robbert_bassham")';
 			$parameters = ['pw' => $pw];
 			$sql = $this->pdo->prepare($query);
 			$sql->execute($parameters);
